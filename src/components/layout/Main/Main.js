@@ -1,11 +1,11 @@
 import React from 'react';
 import './Main.css';
-import useBlogs from '../../../hooks/useBlogs.js';
-import BlogCard from '../../BlogCard/BlogCard.js';
+import useBlogs from '../../../hooks/useBlogs';
+import BlogCard from '../../BlogCard/BlogCard';
 
 export default function Main() {
   const blogs = useBlogs();
-
+  console.log(blogs);
   return (
     <main>
       {blogs.map((blog) => (
